@@ -20,3 +20,12 @@ puts 10==10
 c=20
 d=20
 puts c==d
+#diff between symbol and string
+string='hello'
+string1='hello'
+puts string.object_id
+puts string1.object_id
+symbol=:hello
+symbol1=:hello
+puts symbol.object_id
+puts symbol1.object_id

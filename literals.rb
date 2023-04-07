@@ -30,3 +30,4 @@ symbol1=:hello
 puts symbol.object_id
 puts symbol1.object_id
 puts 'hello'
+puts "hey"

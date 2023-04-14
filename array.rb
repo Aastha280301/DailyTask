@@ -2,12 +2,13 @@ a=gets.chomp.to_i
 arr = []
 for i in 1..a
   array=arr.push(gets.chomp)
-end
+end 
 for i in 1..array.length
-  if array=="bob"  
-   puts find_index(array)
-  end
+  if array.include?("bob")  
+   puts i
+   break
+else 
+  puts "-1"
+  break
 end
-
-
-# find_in(array)
+end

@@ -1,0 +1,36 @@
+<%# <h1>Aastha</h1>
+
+<ul>
+  <% @aastha.each do |aastha| %>
+    <%# <li>
+     <a href="/articles/<%= aastha.id %>
+      <%# <%= aastha.title %>
+      <%# <%= aastha.body %>
+    <%# </li>
+  <% end %>
+<%# </ul>   % %>
+<!--
+<h1>Articles</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="<%= article_path(article) %>">
+        <%= article.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+-->
+
+<h1>Articles</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New Article", new_article_path %>

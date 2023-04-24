@@ -1,0 +1,2 @@
+class Aastha < ApplicationRecord
+end

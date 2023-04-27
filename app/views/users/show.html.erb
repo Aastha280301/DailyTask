@@ -1,0 +1,12 @@
+<h1><%= @users.name%></h1>
+
+<p><%= @users.email %></p>
+
+<h3><%= @users.phoneNumber%>
+
+<h3><%= @users.user_details%>
+
+  <li><%= link_to "Destroy_user", user_path(@users), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>

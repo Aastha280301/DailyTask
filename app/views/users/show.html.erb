@@ -1,3 +1,5 @@
+
+
 <h1><%= @users.name%></h1>
 
 <p><%= @users.email %></p>
@@ -6,7 +8,9 @@
 
 <h3><%= @users.user_details%>
 
-  <li><%= link_to "Destroy_user", user_path(@users), data: {
+
+  <h4><i>If u put wrong details then delete user ,click Destroy_user</i></h4>
+  <%= link_to "Destroy_user", user_path(@users), data: {
                     turbo_method: :delete,
                     turbo_confirm: "Are you sure?"
-                  } %></li>
+                  } %>

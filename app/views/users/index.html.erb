@@ -1,0 +1,13 @@
+
+<h1>Here are the records!</h1>
+<ul>
+<% @users.each do |user| %>
+<li>
+<a href="/users/<%= user.id%>">
+ <%=user.first_name%> 
+  <%=user.last_name%> 
+   <%=user.age%>
+</li>
+<% end %>
+<%= link_to "Click here!", new_user_path%>
+ </ul>

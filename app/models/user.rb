@@ -9,7 +9,7 @@ class User < ApplicationRecord
   end
   def age_greater_than_eighteen
     if age < 18
-      errors.add(:age, "should be greater than eighteen")
+      errors.add(:age, "Hey,dude,age should be greater than eighteen!")
     end
   end
 

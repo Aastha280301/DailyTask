@@ -1,0 +1,12 @@
+<h1>Select Semester</h1>
+
+<ul>
+  <% @semesters.each do |semester| %>
+    <li>
+      <%= link_to semester.course_id, semester %>
+      <%= link_to semester.semester_name, semester %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "select semester", new_semester_path %>

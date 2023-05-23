@@ -1,0 +1,13 @@
+<%= form_with model: @teacher do |form| %>
+  <div>
+    <%= form.label :subject_id %><br>
+    <%= form.text_field :subject_id%>
+  </div>
+   <div>
+    <%= form.label :teacher_name %><br>
+    <%= form.text_field :teacher_name%>
+  </div>
+  <div>
+    <%= form.submit "Submit Feedback Data"%>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+<%= form_with model: @subject do |form| %>
+  <div>
+    <%= form.label :semester_id %><br>
+    <%= form.text_field :semester_id%>
+  </div>
+   <div>
+    <%= form.label :subject_name %><br>
+    <%= form.text_field :subject_name%>
+  </div>
+  <div>
+    <%= form.submit "Submit Subject Data"%>
+  </div>
+<% end %>

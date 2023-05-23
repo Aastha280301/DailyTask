@@ -1,0 +1,12 @@
+<h1>subject Data Form</h1>
+
+<ul>
+  <% @subjects.each do |subject| %>
+    <li>
+      <%= link_to subject.semester_id, subject %>
+       <%= link_to subject.subject_name, subject %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "New subject", new_subject_path %>

@@ -1,0 +1,17 @@
+<%= form_with model: @student do |form| %>
+  <div>
+    <%= form.label :registration_id %><br>
+    <%= form.text_field :registration_id%>
+  </div>
+    <div>
+    <%= form.label :roll_no %><br>
+    <%= form.text_field :roll_no%>
+  </div>
+   <div>
+    <%= form.label :student_name %><br>
+    <%= form.text_field :student_name%>
+  </div>
+  <div>
+    <%= form.submit "Submit Student Data"%>
+  </div>
+<% end %>

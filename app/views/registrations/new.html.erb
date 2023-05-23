@@ -1,0 +1,13 @@
+<%= form_with model: @registration do |form| %>
+  <div>
+    <%= form.label :students_email %><br>
+    <%= form.text_field :students_email %>
+  </div>
+    <div>
+    <%= form.label :password %><br>
+    <%= form.password_field :password %>
+  </div>
+  <div>
+    <%= form.submit "Log in"%>
+  </div>
+<% end %>

@@ -1,0 +1,10 @@
+<h1>Login page</h1>
+<ul>
+  <% @registrations.each do |registration| %>
+    <li>
+      <%= link_to registration.students_email, registration %>
+      <%= link_to registration.password, registration %>
+    </li>
+  <% end %>
+</ul>
+<%= link_to "New registration", new_registration_path %>

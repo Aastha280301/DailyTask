@@ -1,0 +1,14 @@
+<%= form_with model: @course do |form| %>
+  <div>
+    <%= form.label :student_id %><br>
+    <%= form.text_field :student_id %>
+  </div>
+    <div>
+    <%= form.label :course_name %><br>
+    <%=
+  form.select :course_name, ["BCA", "MCA", "Msc" ,"MBA","M.tech",] %>
+</div>
+  <div>
+    <%= form.submit "Submit"%>
+  </div>
+<% end %>

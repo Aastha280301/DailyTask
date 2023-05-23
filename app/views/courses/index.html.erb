@@ -1,0 +1,12 @@
+<h1>Select course</h1>
+
+<ul>
+  <% @courses.each do |course| %>
+    <li>
+      <%= link_to course.student_id, course %>
+      <%= link_to course.course_name, course %>
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to "Enter", new_course_path %>

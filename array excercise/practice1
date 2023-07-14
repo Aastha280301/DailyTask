@@ -1,0 +1,8 @@
+arr = [["test", "hello", "world"],["example", "mem"]]
+puts arr[0][0]
+puts arr[0][1]
+puts arr[0][2]
+puts arr [1][0]
+puts arr [1][1]
+puts arr.last.first
+puts arr.first.first
